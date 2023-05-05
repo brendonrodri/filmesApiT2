@@ -26,6 +26,17 @@ import Filmes from "./components/filmes/filmes"
 import Header from "./components/header/header"
 import Main from "./components/main/main"
 import Series from "./components/series/series"
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+`
+
 export default function App (){
   return(
     <>
@@ -33,6 +44,7 @@ export default function App (){
       <Main />
       <Filmes />
       <Series />
+      <GlobalStyle />
     </>
   )
 }
